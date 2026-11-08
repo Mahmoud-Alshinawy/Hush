@@ -1,0 +1,36 @@
+# Android / Gradle
+.gradle/
+build/
+*/build/
+local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Signing keys — never commit
+*.jks
+*.keystore
+keystore.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.kotlin/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Raw inspector recordings (may contain personal data — see spec §3.4)
+inspector-captures/
+
+# Logs
+*.log
+
+# All Markdown files are kept local, not published
+*.md
