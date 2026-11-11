@@ -34,3 +34,6 @@ inspector-captures/
 
 # All Markdown files are kept local, not published
 *.md
+
+# VibeWise learning notes (personal)
+.vibe-wise/
