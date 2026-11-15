@@ -1,4 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Hush</string>
+
+    <!-- Accessibility service -->
+    <string name="accessibility_service_label">Hush</string>
+    <string name="accessibility_service_description">Hush reads the screens of Instagram, YouTube, TikTok, X, Snapchat and Facebook to recognise which screen you are on. Nothing leaves your phone.</string>
+
+    <!-- Inspector -->
+    <string name="inspector_title">Inspector</string>
+    <string name="inspector_service_on">Accessibility service: on</string>
+    <string name="inspector_service_off">Accessibility service: off</string>
+    <string name="inspector_open_accessibility_settings">Open Accessibility settings</string>
+    <string name="inspector_switch_label">Record screens</string>
+    <string name="inspector_counters">Supported-app events: %1$d · Tree reads: %2$d · Saved: %3$d</string>
+    <plurals name="inspector_entry_count">
+        <item quantity="one">%1$d entry in log</item>
+        <item quantity="other">%1$d entries in log</item>
+    </plurals>
+    <plurals name="inspector_node_count">
+        <item quantity="one">%1$d node</item>
+        <item quantity="other">%1$d nodes</item>
+    </plurals>
+    <string name="inspector_export">Export all</string>
+    <string name="inspector_clear">Clear</string>
+    <string name="inspector_cleared">Inspector log cleared</string>
+    <string name="inspector_undo">Undo</string>
+    <plurals name="inspector_exported">
+        <item quantity="one">Exported %1$d entry</item>
+        <item quantity="other">Exported %1$d entries</item>
+    </plurals>
+    <string name="inspector_export_failed">Export failed</string>
+    <string name="inspector_snapshot_row">%1$s · %2$s · %3$s · %4$s</string>
+    <string name="inspector_scroll_row">%1$s · %2$s · scroll ×%3$d · %4$s</string>
+    <string name="inspector_caps_hit">Cap hit: nodes=%1$b depth=%2$b</string>
+    <string name="inspector_back">Back</string>
 </resources>
