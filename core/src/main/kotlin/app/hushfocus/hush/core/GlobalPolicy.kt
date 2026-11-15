@@ -30,7 +30,7 @@ class GlobalPolicy(private val instagramPolicy: InstagramPolicy = InstagramPolic
         val cooldownRemaining = 1_000 - elapsed
         return PolicyDecision(
             actions = decision.actions.filterNot { it.isNavigation() },
-            recheckAfterMs = cooldownRemaining,
+            recheckAfterMs = minOf(cooldownRemaining, decision.recheckAfterMs ?: cooldownRemaining),
         )
     }
 }

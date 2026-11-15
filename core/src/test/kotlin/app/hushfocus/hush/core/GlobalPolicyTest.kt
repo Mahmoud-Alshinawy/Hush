@@ -128,14 +128,23 @@ class GlobalPolicyTest {
         )))
     }
 
-    @Test fun suppressedTapRequestsOneCheckAtCooldownEndRatherThanEarlierWorkflowDeadline() {
+    @Test fun suppressedTapPreservesEarlierWorkflowDeadline() {
         val decision = policy.decide(PolicySnapshot(msSinceLastNavigationAction = 100,
             instagram = InstagramSnapshot(InstagramScreen.HOME_FEED,
                 targets = setOf(ActionTarget.INSTAGRAM_LOGO),
                 feedNavigation = FeedNavigationSnapshot(FeedDestination.FOLLOWING,
                     FeedNavigationStep.LOGO_MENU, msSinceProgress = 2_400))))
         assertTrue(decision.actions.isEmpty())
-        assertEquals(900L, decision.recheckAfterMs)
+        assertEquals(100L, decision.recheckAfterMs)
+    }
+
+    @Test fun earlierWorkflowTimeoutDuringCooldownReportsFailureInsteadOfNavigation() {
+        val decision = policy.decide(PolicySnapshot(msSinceLastNavigationAction = 200,
+            instagram = InstagramSnapshot(InstagramScreen.HOME_FEED,
+                targets = setOf(ActionTarget.INSTAGRAM_LOGO),
+                feedNavigation = FeedNavigationSnapshot(FeedDestination.FOLLOWING,
+                    FeedNavigationStep.LOGO_MENU, msSinceProgress = 2_500))))
+        assertEquals(PolicyDecision(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED))), decision)
     }
 
     @Test fun cooldownAlsoSkipsTapAndFailedTapFallback() {
@@ -163,9 +172,10 @@ class GlobalPolicyTest {
         assertEquals(1_000L, decision.recheckAfterMs)
     }
 
-    @Test fun unknownScreenDoesNothingEvenWithTargetsAndOldCovers() {
+    @Test fun unknownScreenRemovesOldCoversAndReleasesFocusWithoutNavigation() {
         val rect = CoverRect(0, 100, 400, 800)
-        assertEquals(PolicyDecision(), policy.decide(PolicySnapshot(instagram = InstagramSnapshot(
+        assertEquals(PolicyDecision(listOf(Action.HideCover(CoverKind.REELS_TAB), Action.ReleaseAudioFocus)),
+            policy.decide(PolicySnapshot(instagram = InstagramSnapshot(
             screen = InstagramScreen.UNKNOWN,
             settings = InstagramSettings(dmsOnly = true, hideStories = true),
             targets = ActionTarget.entries.toSet(), tabBarVisible = true,

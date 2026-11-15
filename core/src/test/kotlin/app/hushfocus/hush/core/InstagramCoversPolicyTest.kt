@@ -193,14 +193,48 @@ class InstagramCoversPolicyTest {
         )).actions)
     }
 
-    @Test fun dmsOnlyRejectsProfileReelAndStillRedirectsWithAllowance() {
+    @Test fun dmsOnlyAllowsDmReelEvenWithVisibleTabBar() {
+        assertEquals(listOf(Action.Allow), policy.decide(InstagramSnapshot(InstagramScreen.REEL_PLAYER,
+            settings = InstagramSettings(dmsOnly = true), reel = ReelSessionSnapshot(origin = ReelOrigin.DM),
+            tabBarVisible = true, targets = setOf(ActionTarget.DMS_TAB))).actions)
+    }
+
+    @Test fun dmsOnlyDoesNotRedirectAnyOriginAdmittedByAllowance() {
+        for (origin in ReelOrigin.entries) {
+            assertEquals(listOf(Action.Allow), policy.decide(InstagramSnapshot(InstagramScreen.REEL_PLAYER,
+                settings = InstagramSettings(dmsOnly = true), reel = ReelSessionSnapshot(origin = origin),
+                allowance = AllowanceState(remainingMs = 1), tabBarVisible = true,
+                targets = setOf(ActionTarget.DMS_TAB))).actions)
+        }
+    }
+
+    @Test fun dmsOnlyRejectsProfileReelUnlessAllowanceAdmitsIt() {
         val snapshot = InstagramSnapshot(InstagramScreen.REEL_PLAYER,
             settings = InstagramSettings(dmsOnly = true), reel = ReelSessionSnapshot(
                 origin = ReelOrigin.PROFILE, originAgeAtOpenMs = 100, msFromOriginToPlayer = 100))
         assertEquals(listOf(Action.Back), policy.decide(snapshot).actions)
-        assertEquals(listOf(Action.Tap(ActionTarget.DMS_TAB)), policy.decide(snapshot.copy(
+        assertEquals(listOf(Action.Allow), policy.decide(snapshot.copy(
             allowance = AllowanceState(remainingMs = 1), tabBarVisible = true,
             targets = setOf(ActionTarget.DMS_TAB))).actions)
+    }
+
+    @Test fun unknownOnlyRemovesOwnedCoversAndReleasesHeldFocus() {
+        val allCovers = CoverKind.entries.associateWith { rect }
+        for (visible in listOf(emptyMap(), allCovers)) for (focusHeld in listOf(false, true)) {
+            val actions = policy.decide(InstagramSnapshot(InstagramScreen.UNKNOWN,
+                settings = InstagramSettings(homeFeedMode = HomeFeedMode.HIDDEN, hideExplore = true,
+                    hideStories = true, dmsOnly = true),
+                coverBounds = allCovers, visibleCovers = visible, audioFocusHeld = focusHeld,
+                tabBarVisible = true, targets = ActionTarget.entries.toSet(),
+                reelPlayerVisible = true, reel = ReelSessionSnapshot(origin = ReelOrigin.HOME_FEED),
+                allowance = AllowanceState(justExhausted = true),
+                interaction = InstagramInteraction.OPEN_SEARCH)).actions
+            val expected = buildList {
+                for (kind in CoverKind.entries) if (kind in visible) add(Action.HideCover(kind))
+                if (focusHeld) add(Action.ReleaseAudioFocus)
+            }
+            assertEquals(expected, actions)
+        }
     }
 
     @Test fun allowanceDoesNotRemoveFeedExploreOrStoryProtection() {

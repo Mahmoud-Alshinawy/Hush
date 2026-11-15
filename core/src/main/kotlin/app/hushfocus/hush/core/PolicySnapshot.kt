@@ -80,14 +80,17 @@ enum class InstagramInteraction {
     GO_BACK_UP, VIEW_OLDER_POSTS, CLOSE_STORY,
 }
 
-enum class FeedDestination { FOLLOWING, FAVORITES, SEARCH }
+enum class FeedDestination { FOLLOWING, FAVORITES, SEARCH, CAUGHT_UP_TOP, OLDER_POSTS }
 
 enum class FeedNavigationStep {
     HOME_TAB, LOGO_MENU, MENU_ENTRY, DESTINATION_CONFIRMATION,
-    SEARCH_TAB, SEARCH_BOX, COMPLETE, STOPPED,
+    SEARCH_TAB, SEARCH_BOX, SCROLL_ABOVE_CAUGHT_UP, OLDER_POSTS_LINK, COMPLETE, STOPPED,
 }
 
-/** The caller advances steps, records attempts and resets the progress timer on progress. */
+/**
+ * The caller advances steps, records tap/scroll attempts and resets the timer on progress.
+ * After NAVIGATION_FAILED the caller must set step to STOPPED, preventing retries/messages.
+ */
 data class FeedNavigationSnapshot(
     val destination: FeedDestination,
     val step: FeedNavigationStep,
@@ -95,6 +98,8 @@ data class FeedNavigationSnapshot(
     val attemptedTargets: Set<ActionTarget> = emptySet(),
     val menuEntryCount: Int = 0,
     val destinationTitleMatches: Boolean = false,
+    /** Result supplied by the executor, including a failed Go back up scroll. */
+    val stepFailed: Boolean = false,
 ) {
     init {
         require(msSinceProgress >= 0)

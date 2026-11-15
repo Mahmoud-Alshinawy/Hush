@@ -4,7 +4,9 @@ class InstagramPolicy(
     private val feedNavigationPolicy: InstagramFeedNavigationPolicy = InstagramFeedNavigationPolicy(),
 ) {
     fun decide(snapshot: InstagramSnapshot): PolicyDecision {
-        if (snapshot.screen == InstagramScreen.UNKNOWN) return PolicyDecision()
+        if (snapshot.screen == InstagramScreen.UNKNOWN) {
+            return PolicyDecision(coverActions(snapshot, emptyMap()))
+        }
 
         val desiredCovers = desiredCovers(snapshot)
         val actions = coverActions(snapshot, desiredCovers).toMutableList()
@@ -38,15 +40,11 @@ class InstagramPolicy(
         return PolicyDecision(actions, contentDecision.recheckAfterMs)
     }
 
-    private fun playerDecision(snapshot: InstagramSnapshot): PolicyDecision {
-        val reelDecision = when {
+    private fun playerDecision(snapshot: InstagramSnapshot): PolicyDecision =
+        when {
             snapshot.allowance.hasTimeRemaining -> PolicyDecision(listOf(Action.Allow))
             else -> restrictedPlayerDecision(snapshot)
         }
-        if (reelDecision.actions.any { it.isNavigation() }) return reelDecision
-        val redirect = if (snapshot.settings.dmsOnly) dmRedirect(snapshot) else emptyList()
-        return if (redirect.isEmpty()) reelDecision else PolicyDecision(redirect)
-    }
 
     private fun restrictedPlayerDecision(snapshot: InstagramSnapshot): PolicyDecision {
         val origin = admittedOrigin(snapshot.reel)

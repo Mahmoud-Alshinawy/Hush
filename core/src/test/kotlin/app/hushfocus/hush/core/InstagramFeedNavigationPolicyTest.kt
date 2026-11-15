@@ -101,10 +101,10 @@ class InstagramFeedNavigationPolicyTest {
         assertEquals(2_500L, decision.recheckAfterMs)
     }
 
-    @Test fun reportedFailedTapUsesBackOnLaterSnapshot() {
+    @Test fun reportedFailedTapShowsFailureWithoutBackOnLaterSnapshot() {
         val snapshot = home().copy(feedNavigation = flow(FeedNavigationStep.LOGO_MENU),
             failedTap = ActionTarget.INSTAGRAM_LOGO)
-        assertEquals(listOf(Action.Back), policy.decide(snapshot).actions)
+        assertEquals(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED)), policy.decide(snapshot).actions)
     }
 
     @Test fun searchFromFeedTapsTabThenBoxWithSuppliedProgress() {
@@ -137,10 +137,78 @@ class InstagramFeedNavigationPolicyTest {
         assertTrue(policy.decide(snapshot.copy(targets = emptySet())).actions.isEmpty())
     }
 
-    @Test fun failedViewOlderPostsTapFallsBackToBack() {
-        assertEquals(listOf(Action.Back), policy.decide(caughtUp(InstagramInteraction.VIEW_OLDER_POSTS)
+    @Test fun failedViewOlderPostsTapShowsFailureWithoutBack() {
+        assertEquals(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED)),
+            policy.decide(caughtUp(InstagramInteraction.VIEW_OLDER_POSTS)
             .copy(failedTap = ActionTarget.OLDER_POSTS_LINK)).actions)
     }
+
+    @Test fun everyPanelTapFailureReportsFailureWithoutBackOrRetry() {
+        val steps = listOf(
+            Triple(FeedDestination.FOLLOWING, FeedNavigationStep.HOME_TAB, ActionTarget.HOME_TAB),
+            Triple(FeedDestination.FOLLOWING, FeedNavigationStep.LOGO_MENU, ActionTarget.INSTAGRAM_LOGO),
+            Triple(FeedDestination.FOLLOWING, FeedNavigationStep.MENU_ENTRY, ActionTarget.FOLLOWING_MENU_ENTRY),
+            Triple(FeedDestination.FAVORITES, FeedNavigationStep.MENU_ENTRY, ActionTarget.FAVORITES_MENU_ENTRY),
+            Triple(FeedDestination.SEARCH, FeedNavigationStep.SEARCH_TAB, ActionTarget.SEARCH_TAB),
+            Triple(FeedDestination.SEARCH, FeedNavigationStep.SEARCH_BOX, ActionTarget.SEARCH_BOX),
+            Triple(FeedDestination.OLDER_POSTS, FeedNavigationStep.OLDER_POSTS_LINK, ActionTarget.OLDER_POSTS_LINK),
+        )
+        for ((destination, step, target) in steps) {
+            val snapshot = InstagramSnapshot(
+                screen = if (step == FeedNavigationStep.HOME_TAB) InstagramScreen.PROFILE
+                    else InstagramScreen.HOME_FEED,
+                feedNavigation = flow(step, destination).copy(menuEntryCount = 2),
+                targets = ActionTarget.entries.toSet(), failedTap = target,
+            )
+            assertEquals(PolicyDecision(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED))),
+                policy.decide(snapshot), "$destination $step")
+        }
+    }
+
+    @Test fun goBackUpScrollFailureReportsFailureWithoutAnotherButtonPress() {
+        val snapshot = caughtUp(InstagramInteraction.GO_BACK_UP).copy(interaction = null,
+            feedNavigation = flow(FeedNavigationStep.SCROLL_ABOVE_CAUGHT_UP, FeedDestination.CAUGHT_UP_TOP)
+                .copy(stepFailed = true))
+        assertEquals(PolicyDecision(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED))),
+            policy.decide(snapshot))
+    }
+
+    @Test fun everyPanelWorkflowTimesOutWithoutBackOrRetry() {
+        for (navigation in panelWorkflows()) {
+            val snapshot = InstagramSnapshot(InstagramScreen.HOME_FEED,
+                feedNavigation = navigation.copy(msSinceProgress = 2_500),
+                targets = ActionTarget.entries.toSet())
+            assertEquals(PolicyDecision(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED))),
+                policy.decide(snapshot), navigation.destination.toString())
+        }
+    }
+
+    @Test fun stoppedPanelWorkflowDoesNothingAfterFailureEvenWithStaleButtonInteraction() {
+        for (navigation in panelWorkflows()) {
+            val snapshot = home(InstagramInteraction.OPEN_FAVORITES).copy(
+                feedNavigation = navigation.copy(stepFailed = true))
+            assertEquals(listOf(Action.ShowMessage(HushMessage.NAVIGATION_FAILED)),
+                policy.decide(snapshot).actions)
+            assertEquals(PolicyDecision(), policy.decide(snapshot.copy(
+                feedNavigation = snapshot.feedNavigation!!.copy(step = FeedNavigationStep.STOPPED),
+            )))
+        }
+    }
+
+    @Test fun goBackUpScrollIsNotRepeatedWhileWaitingForProgress() {
+        val snapshot = caughtUp(InstagramInteraction.GO_BACK_UP).copy(
+            feedNavigation = flow(FeedNavigationStep.SCROLL_ABOVE_CAUGHT_UP, FeedDestination.CAUGHT_UP_TOP)
+                .copy(attemptedTargets = setOf(ActionTarget.FEED_ABOVE_CAUGHT_UP), msSinceProgress = 2_499))
+        assertEquals(PolicyDecision(recheckAfterMs = 1), policy.decide(snapshot))
+    }
+
+    private fun panelWorkflows() = listOf(
+        flow(FeedNavigationStep.LOGO_MENU, FeedDestination.FOLLOWING),
+        flow(FeedNavigationStep.LOGO_MENU, FeedDestination.FAVORITES),
+        flow(FeedNavigationStep.SEARCH_TAB, FeedDestination.SEARCH),
+        flow(FeedNavigationStep.SCROLL_ABOVE_CAUGHT_UP, FeedDestination.CAUGHT_UP_TOP),
+        flow(FeedNavigationStep.OLDER_POSTS_LINK, FeedDestination.OLDER_POSTS),
+    )
 
     @Test fun panelInteractionsAreIgnoredWhenPanelIsNotApplicable() {
         val snapshot = InstagramSnapshot(InstagramScreen.PROFILE,
