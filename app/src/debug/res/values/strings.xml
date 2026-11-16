@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Debug build only: strings for the cover demo. -->
+<resources>
+    <string name="cover_demo_title">Cover demo</string>
+    <string name="cover_demo_target">Cover target</string>
+    <string name="cover_demo_show">Show cover</string>
+    <string name="cover_demo_hide_all">Hide all</string>
+    <string name="cover_demo_service_off">Accessibility service is off</string>
+    <string name="cover_demo_shown_at">Cover requested at [%1$d,%2$d,%3$d,%4$d]</string>
+    <string name="cover_demo_keyboard">Type here to open the keyboard</string>
+    <string name="cover_demo_filler">Filler row %1$d</string>
+</resources>

@@ -6,6 +6,10 @@
     <string name="accessibility_service_label">Hush</string>
     <string name="accessibility_service_description">Hush reads the screens of Instagram, YouTube, TikTok, X, Snapchat and Facebook to recognise which screen you are on. Nothing leaves your phone.</string>
 
+    <!-- Covers -->
+    <string name="cover_label">Hidden by Hush</string>
+    <string name="cover_content_description">Covered by Hush</string>
+
     <!-- Inspector -->
     <string name="inspector_title">Inspector</string>
     <string name="inspector_service_on">Accessibility service: on</string>
