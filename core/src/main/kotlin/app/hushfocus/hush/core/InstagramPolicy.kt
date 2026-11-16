@@ -63,7 +63,7 @@ class InstagramPolicy(
             ReelOrigin.SEARCH_RESULTS, ReelOrigin.FAVORITES -> PolicyDecision(listOf(Action.Back))
             ReelOrigin.REELS_TAB -> PolicyDecision(listOf(redirectFromReelsTab(snapshot)))
             ReelOrigin.UNRESOLVED -> when {
-                snapshot.replyBoxVisible -> dmReelDecision(snapshot)
+                snapshot.replyBoxVisible && !snapshot.reel.originResolutionComplete -> dmReelDecision(snapshot)
                 snapshot.replyBoxMissingMs >= 600 -> PolicyDecision(listOf(Action.Back))
                 else -> PolicyDecision(listOf(Action.Allow), 600 - snapshot.replyBoxMissingMs)
             }
@@ -81,8 +81,11 @@ class InstagramPolicy(
         if (session.origin !in setOf(ReelOrigin.PROFILE, ReelOrigin.STORY, ReelOrigin.LINK)) {
             return session.origin
         }
-        if (session.origin == ReelOrigin.LINK && !session.usageAccessGranted) return ReelOrigin.UNRESOLVED
         val ageAtOpen = session.originAgeAtOpenMs ?: return ReelOrigin.UNRESOLVED
+        if (session.origin == ReelOrigin.LINK) {
+            return if (session.usageAccessGranted && ageAtOpen <= 5_000) ReelOrigin.LINK
+            else ReelOrigin.UNRESOLVED
+        }
         val openingDelay = session.msFromOriginToPlayer ?: return ReelOrigin.UNRESOLVED
         return if (ageAtOpen <= 5_000 && openingDelay <= 1_500) session.origin else ReelOrigin.UNRESOLVED
     }
@@ -100,14 +103,16 @@ class InstagramPolicy(
     }
 
     private fun redirectFromReelsTab(snapshot: InstagramSnapshot): Action =
-        if (ActionTarget.DMS_TAB in snapshot.targets && snapshot.failedTap != ActionTarget.DMS_TAB) {
+        if (ActionTarget.DMS_TAB in snapshot.targets && snapshot.failedTap != ActionTarget.DMS_TAB &&
+            !snapshot.reelsTabRedirectFailed
+        ) {
             Action.Tap(ActionTarget.DMS_TAB)
         } else Action.Back
 
     private fun dmRedirect(snapshot: InstagramSnapshot): List<Action> {
         if (!snapshot.tabBarVisible || snapshot.screen == InstagramScreen.DM_INBOX ||
             snapshot.screen == InstagramScreen.DM_CHAT || ActionTarget.DMS_TAB !in snapshot.targets ||
-            snapshot.failedTap == ActionTarget.DMS_TAB
+            snapshot.failedTap == ActionTarget.DMS_TAB || snapshot.reelsTabRedirectFailed
         ) return emptyList()
         return listOf(Action.Tap(ActionTarget.DMS_TAB))
     }

@@ -38,6 +38,8 @@ data class ReelSessionSnapshot(
     val msFromOriginToPlayer: Long? = null,
     val usageAccessGranted: Boolean = false,
     val changes: List<ReelSwipeEvidence> = emptyList(),
+    /** True once an origin is latched or the opening reply-box window has expired. */
+    val originResolutionComplete: Boolean = false,
 ) {
     init {
         require(originAgeAtOpenMs == null || originAgeAtOpenMs >= 0)
@@ -71,6 +73,8 @@ data class InstagramSnapshot(
     val feedNavigation: FeedNavigationSnapshot? = null,
     /** A failed attempt from a previous check; never an instruction to replay the tap. */
     val failedTap: ActionTarget? = null,
+    /** Persistent failure state for the current Reels-tab context, not a queued action. */
+    val reelsTabRedirectFailed: Boolean = false,
 ) {
     init { require(replyBoxMissingMs >= 0) }
 }

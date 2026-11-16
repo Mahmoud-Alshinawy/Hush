@@ -69,6 +69,19 @@ class InstagramReelsPolicyTest {
         assertBack(snapshot.copy(reel = snapshot.reel.copy(usageAccessGranted = false)))
     }
 
+    @Test fun linkUsesFiveSecondAgeWithoutProfileOpeningDelay() {
+        val snapshot = player(ReelOrigin.LINK)
+        assertAllowed(snapshot.copy(reel = snapshot.reel.copy(originAgeAtOpenMs = 4_999,
+            msFromOriginToPlayer = null)))
+        assertBack(snapshot.copy(reel = snapshot.reel.copy(originAgeAtOpenMs = 5_001,
+            msFromOriginToPlayer = null)))
+    }
+
+    @Test fun finalizedUnresolvedOriginCannotUseReplyBoxAfterDeadline() {
+        val snapshot = player(ReelOrigin.UNRESOLVED).copy(replyBoxVisible = true, replyBoxMissingMs = 600)
+        assertBack(snapshot.copy(reel = snapshot.reel.copy(originResolutionComplete = true)))
+    }
+
     @Test fun unresolvedOriginAt599MsAllowsAndRequestsFreshCheck() {
         val decision = policy.decide(player(ReelOrigin.UNRESOLVED).copy(replyBoxMissingMs = 599))
         assertEquals(listOf(Action.Allow), decision.actions)
@@ -226,6 +239,20 @@ class InstagramReelsPolicyTest {
             targets = setOf(ActionTarget.DMS_TAB),
             failedTap = ActionTarget.DMS_TAB,
         )).actions)
+    }
+
+    @Test fun persistentRedirectFailureChoosesBackWithNoOneShotFailure() {
+        val snapshot = InstagramSnapshot(InstagramScreen.REELS_TAB, targets = setOf(ActionTarget.DMS_TAB))
+        assertFalse(snapshot.reelsTabRedirectFailed)
+        assertEquals(listOf(Action.Tap(ActionTarget.DMS_TAB)), policy.decide(snapshot).actions)
+        assertEquals(listOf(Action.Back), policy.decide(snapshot.copy(reelsTabRedirectFailed = true)).actions)
+    }
+
+    @Test fun dmsOnlyNeverRetapsDmTargetWhileRedirectFailureIsSet() {
+        val snapshot = InstagramSnapshot(InstagramScreen.REELS_TAB, tabBarVisible = true,
+            settings = InstagramSettings(dmsOnly = true), targets = setOf(ActionTarget.DMS_TAB),
+            reelsTabRedirectFailed = true)
+        assertTrue(policy.decide(snapshot).actions.isEmpty())
     }
 
     @Test fun playerOpenedFromReelsTabRedirectsToDms() {
