@@ -38,4 +38,61 @@
     <string name="inspector_scroll_row">%1$s · %2$s · scroll ×%3$d · %4$s</string>
     <string name="inspector_caps_hit">Cap hit: nodes=%1$b depth=%2$b</string>
     <string name="inspector_back">Back</string>
+
+    <!-- Navigation -->
+    <string name="navigate_back">Back</string>
+
+    <!-- App names (brands, not translated) -->
+    <string name="app_instagram" translatable="false">Instagram</string>
+    <string name="app_youtube" translatable="false">YouTube</string>
+    <string name="app_tiktok" translatable="false">TikTok</string>
+    <string name="app_x" translatable="false">X</string>
+    <string name="app_snapchat" translatable="false">Snapchat</string>
+    <string name="app_facebook" translatable="false">Facebook</string>
+
+    <!-- Home -->
+    <string name="home_hush_switch">Hush</string>
+    <string name="home_status_running">Hush is running</string>
+    <string name="home_status_hush_off">Hush is off</string>
+    <string name="home_status_service_off">Accessibility permission missing</string>
+    <string name="home_status_service_off_detail">Hush needs its accessibility service to work.</string>
+    <string name="home_set_up">Set up</string>
+    <string name="home_apps_title">Apps</string>
+    <string name="home_coming_soon">Coming soon</string>
+    <string name="home_advanced_title">Advanced</string>
+    <string name="home_inspector">Inspector</string>
+    <string name="home_inspector_summary">Record app screens to write Hush’s rules</string>
+
+    <!-- Setup -->
+    <string name="setup_title">Set up Hush</string>
+    <string name="setup_service_title">Accessibility service</string>
+    <string name="setup_service_on">On</string>
+    <string name="setup_service_off">Off</string>
+    <string name="setup_service_explain">Hush uses an accessibility service to recognise screens in the apps you choose.</string>
+    <string name="setup_open_accessibility">Open Accessibility settings</string>
+    <string name="setup_restricted_title">If Hush’s switch is greyed out</string>
+    <string name="setup_restricted_intro">Android blocks this switch for apps installed outside the Play Store until you allow it:</string>
+    <string name="setup_restricted_step_1">Open Hush’s App info.</string>
+    <string name="setup_restricted_step_2">Tap ⋮ in the top corner, then “Allow restricted settings”.</string>
+    <string name="setup_restricted_step_3">Go back to Accessibility settings and turn Hush on.</string>
+    <string name="setup_open_app_info">Open Hush App info</string>
+    <string name="setup_privacy">Hush reads screens of the apps you choose, on your phone only. Nothing leaves your phone.</string>
+
+    <!-- Instagram settings -->
+    <string name="ig_allow_dm_reels">Allow reels sent in DMs</string>
+    <string name="ig_allow_dm_reels_summary">A reel someone sends you plays, but you can’t swipe on to more.</string>
+    <string name="ig_home_feed">Home feed</string>
+    <string name="ig_home_feed_normal">Normal</string>
+    <string name="ig_home_feed_hidden">Hidden</string>
+    <string name="ig_stop_at_caught_up">Stop at “You’re all caught up”</string>
+    <string name="ig_hide_explore">Hide Explore</string>
+    <string name="ig_hide_stories">Hide stories</string>
+    <string name="ig_dms_only">DMs-only mode</string>
+    <string name="ig_allowance">Daily reels allowance</string>
+    <string name="ig_allowance_summary">While time remains, reels work normally.</string>
+    <string name="allowance_off">Off</string>
+    <plurals name="allowance_minutes">
+        <item quantity="one">%1$d minute</item>
+        <item quantity="other">%1$d minutes</item>
+    </plurals>
 </resources>

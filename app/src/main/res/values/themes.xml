@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Theme.Hush" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- DayNight, so the window and launch background match the system's light or dark
+         theme before Compose draws (no white flash in dark mode). -->
+    <style name="Theme.Hush" parent="android:Theme.DeviceDefault.DayNight">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
 </resources>
