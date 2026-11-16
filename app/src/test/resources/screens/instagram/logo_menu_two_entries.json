@@ -1,0 +1,274 @@
+{
+   "kind": "snapshot",
+   "v": 1,
+   "timeMs": 1000000,
+   "package": "com.instagram.android",
+   "trigger": "TYPE_WINDOW_CONTENT_CHANGED",
+   "nodeCapHit": false,
+   "depthCapHit": false,
+   "windows": [
+    {
+     "type": "system",
+     "layer": 2,
+     "focused": false,
+     "active": false,
+     "bounds": [
+      0,
+      2298,
+      1080,
+      2412
+     ],
+     "title": "‹text:14›"
+    },
+    {
+     "type": "system",
+     "layer": 1,
+     "focused": false,
+     "active": false,
+     "bounds": [
+      0,
+      0,
+      1080,
+      114
+     ]
+    },
+    {
+     "type": "application",
+     "layer": 0,
+     "focused": true,
+     "active": true,
+     "bounds": [
+      277,
+      228,
+      802,
+      588
+     ],
+     "title": "‹text:12›"
+    }
+   ],
+   "nodes": [
+    {
+     "depth": 0,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      277,
+      228,
+      802,
+      588
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 1,
+     "id": "com.instagram.android:id\/context_menu",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      277,
+      228,
+      802,
+      588
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 2,
+     "id": "com.instagram.android:id\/context_menu_options_list",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      277,
+      240,
+      802,
+      576
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "collectionInfo": {
+      "rows": 2,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 3,
+     "id": "com.instagram.android:id\/context_menu_item",
+     "class": "android.widget.Button",
+     "bounds": [
+      277,
+      240,
+      802,
+      408
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "Following",
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 4,
+     "id": "com.instagram.android:id\/context_menu_start_items",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      337,
+      276,
+      670,
+      372
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 5,
+     "id": "com.instagram.android:id\/context_menu_item_start_icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      337,
+      276,
+      433,
+      372
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 5,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      457,
+      293,
+      670,
+      354
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 6,
+     "id": "com.instagram.android:id\/context_menu_item_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      457,
+      293,
+      670,
+      354
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "Following"
+    },
+    {
+     "depth": 3,
+     "id": "com.instagram.android:id\/context_menu_item",
+     "class": "android.widget.Button",
+     "bounds": [
+      277,
+      408,
+      802,
+      576
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "Favorites",
+     "collectionItemInfo": {
+      "row": 1,
+      "col": 0
+     }
+    },
+    {
+     "depth": 4,
+     "id": "com.instagram.android:id\/context_menu_start_items",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      337,
+      444,
+      663,
+      540
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 5,
+     "id": "com.instagram.android:id\/context_menu_item_start_icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      337,
+      444,
+      433,
+      540
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 5,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      457,
+      461,
+      663,
+      522
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 6,
+     "id": "com.instagram.android:id\/context_menu_item_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      457,
+      461,
+      663,
+      522
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "Favorites"
+    }
+   ]
+  }

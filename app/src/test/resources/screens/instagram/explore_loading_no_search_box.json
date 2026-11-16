@@ -1,0 +1,6700 @@
+{
+   "kind": "snapshot",
+   "v": 1,
+   "timeMs": 1000000,
+   "package": "com.instagram.android",
+   "trigger": "TYPE_WINDOW_CONTENT_CHANGED",
+   "nodeCapHit": false,
+   "depthCapHit": false,
+   "windows": [
+    {
+     "type": "system",
+     "layer": 2,
+     "focused": false,
+     "active": false,
+     "bounds": [
+      0,
+      2298,
+      1080,
+      2412
+     ],
+     "title": "‹text:14›"
+    },
+    {
+     "type": "system",
+     "layer": 1,
+     "focused": false,
+     "active": false,
+     "bounds": [
+      0,
+      0,
+      1080,
+      114
+     ]
+    },
+    {
+     "type": "application",
+     "layer": 0,
+     "focused": true,
+     "active": true,
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "title": "‹text:9›"
+    }
+   ],
+   "nodes": [
+    {
+     "depth": 0,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 1,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 2,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 3,
+     "id": "com.instagram.android:id\/action_bar_root",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 4,
+     "id": "android:id\/content",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 5,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 6,
+     "id": "com.instagram.android:id\/swipe_navigation_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2412
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 7,
+     "id": "com.instagram.android:id\/layout_container_center_right_coordinator_layout",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2298
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 8,
+     "id": "com.instagram.android:id\/layout_container_right",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 8,
+     "id": "com.instagram.android:id\/activity_and_camera_shared_views_main_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 8,
+     "id": "com.instagram.android:id\/layout_container_main_panel",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 9,
+     "id": "com.instagram.android:id\/layout_container_main_wrapper",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 4,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 10,
+     "id": "com.instagram.android:id\/layout_container_main",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 10,
+     "id": "com.instagram.android:id\/swipeable_tab_view_pager",
+     "class": "androidx.viewpager.widget.ViewPager",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "scrollable",
+      "visible"
+     ],
+     "collectionInfo": {
+      "rows": 1,
+      "cols": 5
+     }
+    },
+    {
+     "depth": 11,
+     "id": "com.instagram.android:id\/swipeable_nav_view_pager_inner_recycler_view",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 5,
+     "flags": [
+      "enabled",
+      "scrollable",
+      "visible"
+     ],
+     "collectionInfo": {
+      "rows": 1,
+      "cols": 5
+     }
+    },
+    {
+     "depth": 12,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 13,
+     "id": "com.instagram.android:id\/layout_container_swipeable",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 14,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/sticky_header_list",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/refreshable_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "android:id\/list",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      2154
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "collectionInfo": {
+      "rows": 26,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/gap_binder_group",
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      635
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 1,
+      "col": 0
+     }
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/reels_tray_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      635
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      635
+     ],
+     "childCount": 4,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "desc": "‹text:20›",
+     "collectionInfo": {
+      "rows": 1,
+      "cols": 26
+     }
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/outer_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      282,
+      -2945,
+      635
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/avatar_view",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2945,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      282,
+      -2945,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:31›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/avatar_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2945,
+      565
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/seen_state",
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      300,
+      -2963,
+      559
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/avatar_image_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      321,
+      -2984,
+      538
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:31›"
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/reel_empty_badge",
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      476,
+      -2969,
+      553
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:12›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/title_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      565,
+      -2945,
+      611
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/username",
+     "class": "android.widget.TextView",
+     "bounds": [
+      0,
+      565,
+      -3007,
+      611
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:10›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/outer_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      282,
+      -2650,
+      635
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 1
+     }
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/avatar_view",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2650,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      282,
+      -2650,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:35›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/avatar_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2650,
+      565
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/seen_state",
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      300,
+      -2668,
+      559
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/avatar_image_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      321,
+      -2689,
+      538
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:35›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/title_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      565,
+      -2650,
+      611
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/username",
+     "class": "android.widget.TextView",
+     "bounds": [
+      0,
+      565,
+      -2718,
+      611
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:9›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/outer_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      282,
+      -2355,
+      635
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 2
+     }
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/avatar_view",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2355,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      282,
+      -2355,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:36›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/avatar_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2355,
+      565
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/seen_state",
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      300,
+      -2373,
+      559
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/avatar_image_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      321,
+      -2394,
+      538
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:36›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/title_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      565,
+      -2355,
+      611
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/username",
+     "class": "android.widget.TextView",
+     "bounds": [
+      0,
+      565,
+      -2403,
+      611
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:10›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/outer_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      635
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 3
+     }
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/avatar_view",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      565
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:35›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/avatar_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      565
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/seen_state",
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      300,
+      -2160,
+      559
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/avatar_image_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      321,
+      -2160,
+      538
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:35›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/title_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      565,
+      -2160,
+      611
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/username",
+     "class": "android.widget.TextView",
+     "bounds": [
+      0,
+      565,
+      -2160,
+      611
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:9›"
+    },
+    {
+     "depth": 18,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/video_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/video_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 5,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1502,
+      -2700,
+      1502
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      2250,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      2250,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      2250,
+      -2202,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:13›"
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/slideout_iconview_icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      2269,
+      -2221,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      2369,
+      -2320,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/video_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/media_group",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      1010
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/row_feed_profile_header",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      635,
+      -2160,
+      791
+     ],
+     "childCount": 4,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:39›"
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      635,
+      -3093,
+      791
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      656,
+      -3093,
+      770
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/row_feed_photo_profile_imageview",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      668,
+      -3105,
+      758
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:32›"
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/row_feed_photo_profile_name",
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      635,
+      -2292,
+      711
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "text": "‹text:13›",
+     "desc": "‹text:13›"
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/secondary_label",
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      710,
+      -2292,
+      791
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "text": "‹text:31›",
+     "desc": "‹text:31›"
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/media_option_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      641,
+      -2160,
+      785
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/action_bar_LinearLayout",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      282
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/main_feed_action_bar",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/action_bar_action_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      282
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/action_bar_buttons_container_left",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -3096,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/action_bar_left_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      114,
+      -3096,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "desc": "‹text:6›"
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/action_bar_title_view",
+     "class": "android.widget.ViewAnimator",
+     "bounds": [
+      0,
+      136,
+      -2304,
+      259
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/title_logo_chevron_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      136,
+      -2526,
+      259
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/title_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      136,
+      -2526,
+      259
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:19›"
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/action_bar_buttons_container_right",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/notification",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/wrapper",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      162,
+      -2196,
+      234
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      162,
+      -2196,
+      234
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/tab_icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      162,
+      -2196,
+      234
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/overlay_stories_tray_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      -2160,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 12,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 1
+     }
+    },
+    {
+     "depth": 13,
+     "id": "com.instagram.android:id\/layout_container_swipeable",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 14,
+     "id": "com.instagram.android:id\/root_clips_layout",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/clips_linear_layout_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/gesture_manager",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/clips_viewer_debug_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -2160,
+      114
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/clips_viewer_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/clips_swipe_refresh_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/clips_viewer_view_pager",
+     "class": "androidx.viewpager.widget.ViewPager",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "collectionInfo": {
+      "rows": 6,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 20,
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "collectionInfo": {
+      "rows": 6,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 2,
+      "col": 0
+     }
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/clips_media_component",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:49›"
+    },
+    {
+     "depth": 24,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/clips_grid_media_content",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1080,
+      1771
+     ],
+     "childCount": 1,
+     "flags": []
+    },
+    {
+     "depth": 26,
+     "class": "android.widget.GridView",
+     "bounds": [
+      0,
+      294,
+      -1080,
+      1771
+     ],
+     "childCount": 6,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "collectionInfo": {
+      "rows": 2,
+      "cols": 4
+     }
+    },
+    {
+     "depth": 27,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1623,
+      1032
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 28,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1623,
+      1031
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 29,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      394,
+      -1623,
+      931
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 27,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1083,
+      1032
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 28,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1083,
+      1031
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 29,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      294,
+      -1083,
+      1031
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 27,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1080,
+      1032
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 28,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      294,
+      -1080,
+      1031
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 29,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      294,
+      -1080,
+      1031
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 27,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1033,
+      -1623,
+      1771
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 28,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1033,
+      -1623,
+      1770
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 29,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      1033,
+      -1623,
+      1770
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 27,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1033,
+      -1083,
+      1771
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 28,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1033,
+      -1083,
+      1770
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 29,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      1033,
+      -1083,
+      1770
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 27,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1033,
+      -1080,
+      1771
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 28,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1033,
+      -1080,
+      1770
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 29,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      1033,
+      -1080,
+      1770
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:26›"
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/clips_carousel_indicator_component",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      1819,
+      -1467,
+      1873
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      1837,
+      -1503,
+      1855
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/clips_viewer_action_bar",
+     "class": "android.widget.RelativeLayout",
+     "bounds": [
+      0,
+      114,
+      -1080,
+      282
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/clips_action_bar_start_action_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -2016,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      141,
+      -2016,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "desc": "‹text:13›"
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/clips_viewer_action_bar_title_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -1259,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/action_bar_tab_layout",
+     "class": "android.widget.HorizontalScrollView",
+     "bounds": [
+      0,
+      161,
+      -1259,
+      262
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionInfo": {
+      "rows": 1,
+      "cols": 2
+     }
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      161,
+      -1259,
+      262
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      161,
+      -1674,
+      262
+     ],
+     "childCount": 1,
+     "flags": [
+      "longClickable",
+      "selected",
+      "enabled"
+     ],
+     "desc": "Reels",
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      161,
+      -1674,
+      262
+     ],
+     "childCount": 2,
+     "flags": [
+      "selected",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "android:id\/text1",
+     "class": "android.widget.TextView",
+     "bounds": [
+      0,
+      161,
+      -1734,
+      262
+     ],
+     "childCount": 0,
+     "flags": [
+      "selected",
+      "enabled"
+     ],
+     "text": "Reels"
+    },
+    {
+     "depth": 23,
+     "id": "android:id\/icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      175,
+      -1698,
+      247
+     ],
+     "childCount": 0,
+     "flags": [
+      "selected",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      161,
+      -1259,
+      262
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "desc": "‹text:7›",
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 1
+     }
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      161,
+      -1259,
+      262
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "android:id\/text1",
+     "class": "android.widget.TextView",
+     "bounds": [
+      0,
+      161,
+      -1423,
+      262
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:7›"
+    },
+    {
+     "depth": 23,
+     "id": "android:id\/icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      175,
+      -1265,
+      247
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/clips_action_bar_end_action_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -1104,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      141,
+      -1104,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "desc": "‹text:4›"
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      177,
+      -1140,
+      246
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/clips_footer_mask_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      2154,
+      -1080,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 12,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 2
+     }
+    },
+    {
+     "depth": 13,
+     "id": "com.instagram.android:id\/layout_container_swipeable",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 14,
+     "id": "com.instagram.android:id\/container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      0,
+      2154
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/direct_inbox_action_bar",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      0,
+      282
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/action_bar_start_action_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -924,
+      114
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/action_bar_title_subtitle_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      158,
+      -204,
+      237
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/action_bar_title_notifications_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      158,
+      -359,
+      237
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/igds_action_bar_title",
+     "class": "android.widget.Button",
+     "bounds": [
+      0,
+      158,
+      -359,
+      237
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "text": "‹text:7›"
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/action_bar_end_action_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      114,
+      -24,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      114,
+      -24,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:11›"
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/list_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/refreshable_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      282,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "class": "androidx.compose.ui.platform.ComposeView",
+     "bounds": [
+      0,
+      282,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      282,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      282,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      282,
+      0,
+      2154
+     ],
+     "childCount": 8,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "collectionInfo": {
+      "rows": 21,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 21,
+     "id": "search_row",
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      282,
+      0,
+      480
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1032,
+      318,
+      -48,
+      462
+     ],
+     "childCount": 3,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      -984,
+      366,
+      -936,
+      414
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "Search"
+    },
+    {
+     "depth": 23,
+     "id": "ig_text",
+     "class": "android.widget.TextView",
+     "bounds": [
+      -888,
+      361,
+      -48,
+      419
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:21›"
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      -1032,
+      324,
+      -48,
+      456
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -1032,
+      967,
+      -801,
+      1025
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "Messages"
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -261,
+      924,
+      -48,
+      1044
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "text": "‹text:8›"
+    },
+    {
+     "depth": 21,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1044,
+      0,
+      1272
+     ],
+     "childCount": 5,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1044,
+      0,
+      1272
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:17›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1038,
+      1065,
+      -852,
+      1251
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      -1023,
+      1080,
+      -867,
+      1236
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -810,
+      1105,
+      -738,
+      1162
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1105,
+      -738,
+      1162
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1162,
+      -573,
+      1212
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:11›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.Button",
+     "bounds": [
+      -1080,
+      1044,
+      0,
+      1272
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1272,
+      0,
+      1500
+     ],
+     "childCount": 5,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1272,
+      0,
+      1500
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:17›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1038,
+      1293,
+      -852,
+      1479
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      -1023,
+      1308,
+      -867,
+      1464
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -810,
+      1333,
+      -714,
+      1390
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1333,
+      -714,
+      1390
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1390,
+      -573,
+      1440
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:11›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.Button",
+     "bounds": [
+      -1080,
+      1272,
+      0,
+      1500
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1500,
+      0,
+      1728
+     ],
+     "childCount": 5,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1500,
+      0,
+      1728
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:27›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1038,
+      1521,
+      -852,
+      1707
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      -1023,
+      1536,
+      -867,
+      1692
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -810,
+      1564,
+      -504,
+      1614
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1564,
+      -504,
+      1614
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:11›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1614,
+      -504,
+      1664
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:14›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.Button",
+     "bounds": [
+      -1080,
+      1500,
+      0,
+      1728
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1728,
+      0,
+      1956
+     ],
+     "childCount": 5,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1728,
+      0,
+      1956
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:31›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1038,
+      1749,
+      -852,
+      1935
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      -1023,
+      1764,
+      -867,
+      1920
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -810,
+      1789,
+      -531,
+      1846
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1789,
+      -531,
+      1846
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:15›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      1846,
+      -513,
+      1896
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:14›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.Button",
+     "bounds": [
+      -1080,
+      1728,
+      0,
+      1956
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1956,
+      0,
+      2154
+     ],
+     "childCount": 5,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1080,
+      1956,
+      0,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:27›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -1038,
+      1977,
+      -852,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      -1023,
+      1992,
+      -867,
+      2148
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      -810,
+      2020,
+      -543,
+      2070
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      2020,
+      -543,
+      2070
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:12›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.TextView",
+     "bounds": [
+      -810,
+      2070,
+      -530,
+      2120
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:13›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.Button",
+     "bounds": [
+      -1080,
+      1956,
+      0,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 15,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      1734,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/direct_quick_snap_consumption_preview",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      1734,
+      0,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/image_stack_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      1734,
+      0,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/creation_entrypoint",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      1787,
+      0,
+      2125
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/creation_plus_badge_container",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      1855,
+      -46,
+      1937
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 12,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 3
+     }
+    },
+    {
+     "depth": 13,
+     "id": "com.instagram.android:id\/layout_container_swipeable",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 14,
+     "id": "com.instagram.android:id\/layout_recyclerview_parent_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/refreshable_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/recycler_view",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 12,
+     "flags": [
+      "enabled",
+      "scrollable",
+      "visible"
+     ],
+     "collectionInfo": {
+      "rows": 19,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      283,
+      356,
+      759
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:50›",
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      283,
+      356,
+      758
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      665,
+      356,
+      759
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      24,
+      694,
+      60,
+      730
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      72,
+      689,
+      156,
+      735
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      362,
+      283,
+      718,
+      759
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:29›",
+     "collectionItemInfo": {
+      "row": 1,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      362,
+      283,
+      718,
+      758
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      362,
+      665,
+      718,
+      759
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      386,
+      694,
+      422,
+      730
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      434,
+      689,
+      513,
+      735
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      724,
+      283,
+      1080,
+      759
+     ],
+     "childCount": 3,
+     "flags": [
+      "clickable",
+      "enabled",
+      "visible"
+     ],
+     "collectionItemInfo": {
+      "row": 2,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "class": "android.view.View",
+     "bounds": [
+      724,
+      283,
+      1080,
+      759
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      724,
+      665,
+      1080,
+      759
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      748,
+      694,
+      784,
+      730
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      796,
+      689,
+      876,
+      735
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/indicator_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      759,
+      1080,
+      759
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      765,
+      356,
+      1241
+     ],
+     "childCount": 3,
+     "flags": [
+      "clickable",
+      "enabled",
+      "visible"
+     ],
+     "collectionItemInfo": {
+      "row": 3,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      765,
+      356,
+      1241
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1147,
+      356,
+      1241
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      24,
+      1176,
+      60,
+      1212
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      72,
+      1171,
+      160,
+      1217
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/indicator_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      356,
+      1241,
+      356,
+      1241
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      362,
+      765,
+      718,
+      1241
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:36›",
+     "collectionItemInfo": {
+      "row": 4,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      362,
+      765,
+      718,
+      1240
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      724,
+      765,
+      1080,
+      1241
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:57›",
+     "collectionItemInfo": {
+      "row": 5,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      724,
+      765,
+      1080,
+      1240
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      724,
+      1147,
+      1080,
+      1241
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      748,
+      1176,
+      784,
+      1212
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      796,
+      1171,
+      849,
+      1217
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:2›"
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      1247,
+      356,
+      1723
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:49›",
+     "collectionItemInfo": {
+      "row": 6,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      0,
+      1247,
+      356,
+      1722
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      0,
+      1629,
+      356,
+      1723
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      24,
+      1658,
+      60,
+      1694
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      72,
+      1653,
+      152,
+      1699
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      362,
+      1247,
+      718,
+      1723
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:32›",
+     "collectionItemInfo": {
+      "row": 7,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      362,
+      1247,
+      718,
+      1722
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      362,
+      1629,
+      718,
+      1723
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/play_count_logo",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      386,
+      1658,
+      422,
+      1694
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/preview_clip_play_count",
+     "class": "android.widget.TextView",
+     "bounds": [
+      434,
+      1653,
+      513,
+      1699
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ],
+     "text": "‹text:4›"
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      724,
+      1247,
+      1080,
+      1723
+     ],
+     "childCount": 3,
+     "flags": [
+      "clickable",
+      "enabled",
+      "visible"
+     ],
+     "collectionItemInfo": {
+      "row": 8,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/play_count_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      724,
+      1629,
+      1080,
+      1723
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/indicator_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      1723,
+      1080,
+      1723
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      1729,
+      356,
+      2154
+     ],
+     "childCount": 3,
+     "flags": [
+      "clickable",
+      "enabled",
+      "visible"
+     ],
+     "collectionItemInfo": {
+      "row": 9,
+      "col": 0
+     }
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      362,
+      1729,
+      718,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:66›",
+     "collectionItemInfo": {
+      "row": 10,
+      "col": 0
+     }
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/grid_card_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      724,
+      1729,
+      1080,
+      2154
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled",
+      "visible"
+     ],
+     "desc": "‹text:37›",
+     "collectionItemInfo": {
+      "row": 11,
+      "col": 0
+     }
+    },
+    {
+     "depth": 15,
+     "id": "com.instagram.android:id\/explore_action_bar",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 12,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      2154
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 4
+     }
+    },
+    {
+     "depth": 13,
+     "id": "com.instagram.android:id\/layout_container_swipeable",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 14,
+     "id": "com.instagram.android:id\/user_detail_fragment",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 15,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/coordinator_root_layout",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 9,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/swipe_refresh_animated_progressbar_container_background",
+     "class": "android.view.View",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      115
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/tab_appbar",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      282,
+      1080,
+      1906
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/profile_header_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      282,
+      1080,
+      1906
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/profile_header_fixed_list",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      282,
+      1080,
+      1761
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/row_profile_header",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1080,
+      282,
+      1080,
+      879
+     ],
+     "childCount": 7,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/profile_header_avatar_container_top_left_stub",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1128,
+      282,
+      1080,
+      624
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/pog_note_bubble_container",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1128,
+      282,
+      1080,
+      624
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/pog_note_bubble_view",
+     "class": "android.widget.Button",
+     "bounds": [
+      1128,
+      282,
+      1080,
+      442
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/pog_note_bubble_root_view",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1128,
+      282,
+      1080,
+      442
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/pog_note_bubble_card_view",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1152,
+      294,
+      1080,
+      418
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/pog_bubble_text_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1152,
+      294,
+      1080,
+      418
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/pog_bubble_text",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1152,
+      318,
+      1080,
+      394
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:15›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1128,
+      360,
+      1080,
+      624
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/reel_ring",
+     "class": "android.view.View",
+     "bounds": [
+      1128,
+      360,
+      1080,
+      624
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/row_profile_header_imageview_frame_layout",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1149,
+      381,
+      1080,
+      603
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/row_profile_header_imageview",
+     "class": "android.widget.Button",
+     "bounds": [
+      1149,
+      381,
+      1080,
+      603
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:24›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/reel_empty_badge",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1305,
+      537,
+      1080,
+      603
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:12›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/profile_header_full_name_above_vanity",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1440,
+      359,
+      1080,
+      409
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:7›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/profile_header_metrics_full_width",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1440,
+      409,
+      1080,
+      571
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/profile_header_post_count_front_familiar",
+     "bounds": [
+      1440,
+      409,
+      1080,
+      571
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:6›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/profile_header_familiar_post_count_value",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1440,
+      433,
+      1080,
+      494
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:1›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/profile_header_familiar_post_count_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1440,
+      494,
+      1080,
+      547
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:5›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/profile_header_followers_stacked_familiar",
+     "bounds": [
+      1612,
+      409,
+      1080,
+      571
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:12›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/profile_header_familiar_followers_value",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1630,
+      433,
+      1080,
+      494
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:3›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/profile_header_familiar_followers_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1630,
+      494,
+      1080,
+      547
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:9›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/profile_header_following_stacked_familiar",
+     "bounds": [
+      1871,
+      409,
+      1080,
+      571
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:12›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/profile_header_familiar_following_value",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1889,
+      433,
+      1080,
+      494
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:3›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/profile_header_familiar_following_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1889,
+      494,
+      1080,
+      547
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:9›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/internal_only_badges",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1128,
+      624,
+      1080,
+      624
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/profile_user_info_compose_view",
+     "class": "androidx.compose.ui.platform.ComposeView",
+     "bounds": [
+      1128,
+      624,
+      1080,
+      735
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.View",
+     "bounds": [
+      1128,
+      624,
+      2112,
+      735
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "class": "android.view.View",
+     "bounds": [
+      1128,
+      624,
+      2112,
+      735
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "class": "android.widget.TextView",
+     "bounds": [
+      1128,
+      624,
+      2112,
+      735
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:56›"
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/profile_links_view",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1128,
+      747,
+      1080,
+      747
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/button_1",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1128,
+      747,
+      1080,
+      747
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/banner_row",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1128,
+      771,
+      1080,
+      843
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      1128,
+      771,
+      1080,
+      843
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ],
+     "collectionInfo": {
+      "rows": 2,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      1128,
+      771,
+      1080,
+      843
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "state": "‹text:12›",
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/igds_prism_chip_icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1152,
+      789,
+      1080,
+      825
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/igds_prism_chip_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1200,
+      783,
+      1080,
+      831
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:7›"
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.Button",
+     "bounds": [
+      1401,
+      771,
+      1080,
+      843
+     ],
+     "childCount": 2,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "state": "‹text:12›",
+     "collectionItemInfo": {
+      "row": 1,
+      "col": 0
+     }
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/igds_prism_chip_icon",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1425,
+      789,
+      1080,
+      825
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/igds_prism_chip_label",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1473,
+      783,
+      1080,
+      831
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:3›"
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      879,
+      1080,
+      1761
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/profile_header_actions_top_row",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1116,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/button_container",
+     "class": "android.widget.Button",
+     "bounds": [
+      1116,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:12›"
+    },
+    {
+     "depth": 24,
+     "class": "android.widget.TextView",
+     "bounds": [
+      1226,
+      900,
+      1080,
+      954
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:12›"
+    },
+    {
+     "depth": 22,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1572,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/button_container",
+     "class": "android.widget.Button",
+     "bounds": [
+      1572,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:13›"
+    },
+    {
+     "depth": 24,
+     "class": "android.widget.TextView",
+     "bounds": [
+      1663,
+      900,
+      1080,
+      954
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:13›"
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/row_profile_header_button_chaining",
+     "class": "android.widget.Button",
+     "bounds": [
+      2028,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:15›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/chaining_button_image",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      2028,
+      879,
+      1080,
+      975
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/similar_accounts_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      1011,
+      1080,
+      1761
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      1011,
+      1080,
+      1761
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/similar_accounts_carousel_header",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1080,
+      1011,
+      1080,
+      1131
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/similar_accounts_carousel_title",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1128,
+      1038,
+      1080,
+      1092
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:15›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/netego_carousel_cta",
+     "class": "android.widget.Button",
+     "bounds": [
+      1945,
+      1038,
+      1080,
+      1092
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "text": "‹text:7›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/similar_accounts_carousel_recycler_view",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      1080,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ],
+     "collectionInfo": {
+      "rows": 1,
+      "cols": 6
+     }
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/suggested_entity_card_top_frame",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1116,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/suggested_entity_card_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1116,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 4,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_image_frame",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1218,
+      1167,
+      1080,
+      1431
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/suggested_entity_card_image",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1218,
+      1167,
+      1080,
+      1431
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_name",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1273,
+      1467,
+      1080,
+      1517
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:7›"
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_social_context_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1152,
+      1526,
+      1080,
+      1569
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/suggested_entity_card_context",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1195,
+      1526,
+      1080,
+      1569
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:17›"
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_user_card_follow_button",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1152,
+      1605,
+      1080,
+      1701
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "text": "‹text:6›",
+     "desc": "‹text:14›"
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/dismiss_button_prism_style",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1494,
+      1131,
+      1080,
+      1221
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:7›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/suggested_entity_card_top_frame",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1596,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 1
+     }
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/suggested_entity_card_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1596,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 4,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_image_frame",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1698,
+      1167,
+      1080,
+      1431
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/suggested_entity_card_image",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1698,
+      1167,
+      1080,
+      1431
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_name",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1768,
+      1467,
+      1080,
+      1517
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:5›"
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_social_context_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1632,
+      1526,
+      1080,
+      1569
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/suggested_entity_card_context",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1675,
+      1526,
+      1080,
+      1569
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:17›"
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_user_card_follow_button",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1632,
+      1605,
+      1080,
+      1701
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "text": "‹text:6›",
+     "desc": "‹text:12›"
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/dismiss_button_prism_style",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1974,
+      1131,
+      1080,
+      1221
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:7›"
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/suggested_entity_card_top_frame",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      2076,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 2
+     }
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/suggested_entity_card_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      2076,
+      1131,
+      1080,
+      1737
+     ],
+     "childCount": 4,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_image_frame",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      2178,
+      1167,
+      1080,
+      1431
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/suggested_entity_card_image",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      2178,
+      1167,
+      1080,
+      1431
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_name",
+     "class": "android.widget.TextView",
+     "bounds": [
+      2288,
+      1467,
+      1080,
+      1517
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:1›"
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_entity_card_social_context_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      2112,
+      1526,
+      1080,
+      1569
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 27,
+     "id": "com.instagram.android:id\/suggested_entity_card_context",
+     "class": "android.widget.TextView",
+     "bounds": [
+      2240,
+      1526,
+      1080,
+      1569
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:8›"
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/suggested_user_card_follow_button",
+     "class": "android.widget.TextView",
+     "bounds": [
+      2112,
+      1605,
+      1080,
+      1701
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "text": "‹text:6›",
+     "desc": "‹text:8›"
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/dismiss_button_prism_style",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      2454,
+      1131,
+      1080,
+      1221
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:7›"
+    },
+    {
+     "depth": 23,
+     "id": "com.instagram.android:id\/footer_space",
+     "class": "android.view.View",
+     "bounds": [
+      1080,
+      1737,
+      1080,
+      1761
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/profile_tabs_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      1761,
+      1080,
+      1906
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/profile_tab_layout",
+     "class": "android.widget.HorizontalScrollView",
+     "bounds": [
+      1080,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ],
+     "collectionInfo": {
+      "rows": 1,
+      "cols": 4
+     }
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 4,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "selected",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "selected",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/profile_tab_icon_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1080,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "selected",
+      "enabled"
+     ],
+     "desc": "‹text:9›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1350,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 1
+     }
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1350,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/profile_tab_icon_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1350,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "Reels"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1620,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 2
+     }
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1620,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/profile_tab_icon_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1620,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:8›"
+    },
+    {
+     "depth": 22,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1890,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 3
+     }
+    },
+    {
+     "depth": 23,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1890,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 24,
+     "id": "com.instagram.android:id\/wrapper",
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1890,
+      1761,
+      1080,
+      1905
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 25,
+     "id": "com.instagram.android:id\/container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1989,
+      1797,
+      1080,
+      1869
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 26,
+     "id": "com.instagram.android:id\/profile_tab_icon_view",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1989,
+      1797,
+      1080,
+      1869
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "desc": "‹text:13›"
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/profile_tabs_bottom_divider",
+     "class": "android.view.View",
+     "bounds": [
+      1080,
+      1905,
+      1080,
+      1906
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/swipe_refresh_animated_progressbar_container",
+     "class": "android.view.View",
+     "bounds": [
+      1515,
+      114,
+      1080,
+      324
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "class": "android.widget.ScrollView",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/bloks_profile_overlay",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      2390,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/profile_viewpager",
+     "class": "androidx.viewpager.widget.ViewPager",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled",
+      "scrollable"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "android:id\/list",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ],
+     "collectionInfo": {
+      "rows": 3,
+      "cols": 1
+     }
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/media_set_row_content_identifier",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 0,
+      "col": 0
+     }
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 22,
+     "id": "com.instagram.android:id\/image_button",
+     "class": "android.widget.Button",
+     "bounds": [
+      1080,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "longClickable",
+      "enabled"
+     ],
+     "desc": "‹text:38›"
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1442,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1442,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1804,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1804,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/gap_binder_group",
+     "class": "android.view.View",
+     "bounds": [
+      1080,
+      2381,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 2,
+      "col": 0
+     }
+    },
+    {
+     "depth": 19,
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      2381,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "collectionItemInfo": {
+      "row": 1,
+      "col": 0
+     }
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/clips_grid_shimmer_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      2160,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      2160,
+      1906,
+      1080,
+      1906
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/clips_grid_recyclerview",
+     "class": "androidx.recyclerview.widget.RecyclerView",
+     "bounds": [
+      2160,
+      1906,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/loot_profile_entrypoint_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      2160,
+      2226,
+      1080,
+      2226
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/floating_banner_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1104,
+      2262,
+      1080,
+      2262
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/unfollow_pill_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1620,
+      2298,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 16,
+     "id": "com.instagram.android:id\/profile_action_bar",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 17,
+     "id": "com.instagram.android:id\/action_bar_layout",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 3,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/left_action_bar_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "id": "com.instagram.android:id\/profile_header_create_button",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1080,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:10›"
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/action_bar_username_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1272,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "clickable",
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.view.ViewGroup",
+     "bounds": [
+      1456,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/action_bar_title",
+     "class": "android.widget.TextView",
+     "bounds": [
+      1456,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ],
+     "text": "‹text:9›",
+     "desc": "‹text:9›"
+    },
+    {
+     "depth": 20,
+     "id": "com.instagram.android:id\/action_bar_username_buttons_container",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1778,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 1,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 21,
+     "id": "com.instagram.android:id\/action_bar_title_chevron",
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1796,
+      180,
+      1080,
+      216
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 18,
+     "id": "com.instagram.android:id\/right_action_bar_buttons",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      1872,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 2,
+     "flags": [
+      "enabled"
+     ]
+    },
+    {
+     "depth": 19,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      1872,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:23›"
+    },
+    {
+     "depth": 19,
+     "class": "android.widget.ImageView",
+     "bounds": [
+      2016,
+      114,
+      1080,
+      282
+     ],
+     "childCount": 0,
+     "flags": [
+      "clickable",
+      "enabled"
+     ],
+     "desc": "‹text:7›"
+    },
+    {
+     "depth": 10,
+     "id": "com.instagram.android:id\/tab_bar_shadow",
+     "class": "android.view.View",
+     "bounds": [
+      0,
+      2153,
+      1080,
+      2154
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 10,
+     "id": "com.instagram.android:id\/tab_bar",
+     "class": "android.widget.LinearLayout",
+     "bounds": [
+      0,
+      2154,
+      1080,
+      2298
+     ],
+     "childCount": 5,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 7,
+     "id": "com.instagram.android:id\/bottom_sheet_camera_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      114,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    },
+    {
+     "depth": 6,
+     "id": "com.instagram.android:id\/overlay_layout_container",
+     "class": "android.widget.FrameLayout",
+     "bounds": [
+      0,
+      0,
+      1080,
+      2298
+     ],
+     "childCount": 0,
+     "flags": [
+      "enabled",
+      "visible"
+     ]
+    }
+   ]
+  }

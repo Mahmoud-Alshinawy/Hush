@@ -1,14 +1,13 @@
 package app.hushfocus.hush.inspector
 
+import app.hushfocus.hush.rules.InstagramRules
+
 /**
  * UI labels the Inspector may store as-is, per app (English, exact match).
  * Temporary home: these move into each app's rules file once those exist (spec §3.6).
  */
 object LabelAllowList {
-    private val instagram = setOf(
-        "Home", "Reels", "Search and explore", "Explore", "Search", "Messages", "Favorites",
-        "Following", "Profile",
-    )
+    private val instagram = InstagramRules.inspectorLabels
     private val youtube = setOf("Home", "Shorts", "Subscriptions", "You", "Create", "Search", "Library")
     private val tiktok = setOf(
         "Home", "Friends", "Inbox", "Profile", "For You", "Following", "Explore", "Search", "Shop",

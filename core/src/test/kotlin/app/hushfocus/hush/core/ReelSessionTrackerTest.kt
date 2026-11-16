@@ -62,11 +62,29 @@ class ReelSessionTrackerTest {
         }
     }
 
+    @Test fun directlyOpenedReelsTabLatchesReelsTabOrigin() {
+        tracker.observe(player().copy(reelsTabSelected = true))
+        assertEquals(ReelOrigin.REELS_TAB, tracker.snapshot(time.nowMs).origin)
+        assertTrue(tracker.snapshot(time.nowMs).originResolutionComplete)
+    }
+
+    @Test fun selectedReelsTabOverridesProfileSeen500MsEarlier() {
+        tracker.observe(InstagramObservation(time.nowMs, InstagramScreen.PROFILE))
+        time.advanceBy(500)
+        tracker.observe(player().copy(reelsTabSelected = true))
+        assertEquals(ReelOrigin.REELS_TAB, tracker.snapshot(time.nowMs).origin)
+    }
+
+    @Test fun openingReplyBoxStillWinsOverSelectedReelsTab() {
+        tracker.observe(player(reply = true).copy(reelsTabSelected = true))
+        assertEquals(ReelOrigin.DM, tracker.snapshot(time.nowMs).origin)
+    }
+
     @Test fun storyUses1500MsAdmissionAndRejectsSelectedReelsTab() {
         for ((delay, selected, expected) in listOf(
             Triple(1_500L, false, ReelOrigin.STORY),
             Triple(1_501L, false, ReelOrigin.UNRESOLVED),
-            Triple(100L, true, ReelOrigin.UNRESOLVED),
+            Triple(100L, true, ReelOrigin.REELS_TAB),
         )) {
             val current = ReelSessionTracker(0.12)
             current.observe(InstagramObservation(0, InstagramScreen.STORY_VIEWER))

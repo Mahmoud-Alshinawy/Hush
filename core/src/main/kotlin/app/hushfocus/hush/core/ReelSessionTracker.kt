@@ -98,6 +98,7 @@ class ReelSessionTracker(private val verticalScrollThresholdFraction: Double) {
         val age = evidence?.let { (observation.atMs - it.atMs).coerceAtLeast(0) }
         val origin = when {
             observation.replyBoxVisible -> ReelOrigin.DM
+            observation.reelsTabSelected -> ReelOrigin.REELS_TAB
             evidence == null || age == null -> ReelOrigin.UNRESOLVED
             evidence.origin == ReelOrigin.LINK ->
                 if (observation.usageAccessGranted && age <= 5_000) ReelOrigin.LINK else ReelOrigin.UNRESOLVED
